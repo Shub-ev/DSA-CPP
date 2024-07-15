@@ -1,8 +1,8 @@
 //1
-//2 3
-//3 4 5
-//4 5 6 7
-//5 6 7 8 9
+//2 1
+//3 2 1
+//4 3 2 1
+//5 4 3 2 1
 
 #include<iostream>
 using namespace std;
@@ -16,7 +16,7 @@ int main(){
         k = i;
         for(int j = 0; j < i; j++){
             cout<<k<<" ";
-            k++;
+            k--;
         }
         cout<<"\n";
     }
