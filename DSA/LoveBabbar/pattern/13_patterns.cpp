@@ -1,6 +1,7 @@
 // A
-// B B
-// C C C
+// C D
+// E F G H
+// I J K L M
 
 #include<iostream>
 using namespace std;
@@ -11,11 +12,10 @@ int main(){
 
     char a = 'A';
     for(int i = 1; i <= n; i++){
-        
-        for(int j = 1; j <= i; j++){
+        for(int j = 0; j < i; j++){
             cout<<a<<" ";
+            a++;
         }
-        a++;
         cout<<"\n";
     }
 }
