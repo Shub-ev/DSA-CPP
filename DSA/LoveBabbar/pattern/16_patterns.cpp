@@ -1,7 +1,8 @@
-// D
-// C D
-// B C D
-// A B C D
+// * * * * * 
+// * * * *
+// * * * 
+// * *
+// *
 
 #include<iostream>
 using namespace std;
@@ -11,10 +12,8 @@ int main(){
     cin>>n;
 
     for(int i = 0; i < n; i++){
-        char a = 'D' - i;
-        for(int j = 0; j <= i; j++){
-            cout<<a<<" ";
-            a++;
+        for(int j = i; j < n; j++){
+            cout<<"* ";
         }
         cout<<"\n";
     }
