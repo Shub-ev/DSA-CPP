@@ -21,7 +21,3 @@ int main(){
         b = c;
     }
 }
-
-void fibonacci(int n){
-
-}
