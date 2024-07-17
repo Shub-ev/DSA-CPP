@@ -10,8 +10,10 @@ int main(){
     primes[1] = 1;
 
     for(int i = 2; i*i <= n; i++){
+        cout<<"outer iteration"<<endl;
         if(primes[i] == 1) continue;
         for(int j = i*i; j <= n; j += i){
+            cout<<"inner iteration"<<endl;
             primes[j] = 1;
         }
     }
