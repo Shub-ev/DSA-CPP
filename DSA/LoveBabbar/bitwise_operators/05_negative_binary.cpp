@@ -4,7 +4,7 @@
 using namespace std;
 
 int neg_binary(int n){
-
+    
 }
 
 int main(){
