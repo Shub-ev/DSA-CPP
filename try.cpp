@@ -2,7 +2,10 @@
 using namespace std;
 
 int main(){
-    int a = 1, b= 2;
+    int arr[5] = {59, 42, 63, 90, 52};
 
-    cout<<(25 * (++b));
+    int *b = arr;
+    for(int i = 0; i < 5; i++){
+        cout<<*(b + i)<<endl;
+    }
 }
