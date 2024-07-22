@@ -3,10 +3,10 @@
 using namespace std;
 
 void findDup(int a[], int n){
-    vector<pair<int, int>> res;
-
+    int ans = 0;
     for(int i = 0; i < n; i++){
-        
+        ans = ans ^ a[i];
+        if(ans == 0) cout<<ans<<" is repeated"<<endl;
     }
 }
 
