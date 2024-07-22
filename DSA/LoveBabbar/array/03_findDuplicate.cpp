@@ -2,8 +2,12 @@
 #include<vector>
 using namespace std;
 
-int* findDup(int a[], int n){
-    vector<int> res(n, 0);
+void findDup(int a[], int n){
+    vector<pair<int, int>> res;
+
+    for(int i = 0; i < n; i++){
+        
+    }
 }
 
 int main(){
