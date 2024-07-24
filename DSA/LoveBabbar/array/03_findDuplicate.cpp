@@ -1,25 +1,34 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
+#include <unordered_set>
 using namespace std;
 
-void findDup(int a[], int n){
-    int ans = 0;
-    for(int i = 0; i < n; i++){
-        ans = ans ^ a[i];
-        if(ans == 0) cout<<ans<<" is repeated"<<endl;
+void findDup(const vector<int>& arr) {
+    unordered_set<int> seen;
+
+    for(int num : arr){
+        if(seen.find(num) != seen.end(num)){
+            cout<<num<<" is repeated"<<"\n";
+        }
+        else{
+            seen.insert(num);
+        }
     }
 }
 
-int main(){
+int main() {
     int n;
-    cout<<"Enter Array Size: ";
-    cin>>n;
+    cout << "Enter Array Size: ";
+    cin >> n;
 
-    int arr[n];
+    vector<int> arr(n);
 
-    for(int i = 0; i < n; i++){
-        cin>>arr[i];
+    cout << "Enter Array Elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
 
-    findDup(arr, n);
+    findDup(arr);
+    
+    return 0;
 }
