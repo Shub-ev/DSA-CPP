@@ -7,7 +7,7 @@ void findDup(const vector<int>& arr) {
     unordered_set<int> seen;
 
     for(int num : arr){
-        if(seen.find(num) != seen.end(num)){
+        if(seen.find(num) != seen.end()){ // .end() gives the index of the last element
             cout<<num<<" is repeated"<<"\n";
         }
         else{

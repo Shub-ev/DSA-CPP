@@ -1,3 +1,5 @@
+// find single element in pairs
+
 // 2 3 1 6 3 6 2
 // Sample Output 1:
 // 1

@@ -1,3 +1,5 @@
+//swap adjacents
+
 #include<iostream>
 using namespace std;
 
