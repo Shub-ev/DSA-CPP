@@ -23,7 +23,7 @@ void binSearch(vector<int> arr, int key){
         mid = low + ((high - low) / 2);
     }
 }
- 
+
 int main(){
     int n;
     cout << "Enter Array Size: ";
