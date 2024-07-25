@@ -1,11 +1,11 @@
 #include<iostream>
+#include<unordered_set>
 using namespace std;
 
 int main(){
-    int arr[5] = {59, 42, 63, 90, 52};
+    unordered_set<int> res(10);
+    res.insert(10);
 
-    int *b = arr;
-    for(int i = 0; i < 5; i++){
-        cout<<*(b + i)<<endl;
-    }
+    int end = res.end();
+    cout<<end<<endl;
 }
