@@ -1,3 +1,6 @@
+// worst case O(Log n)
+// best case O(1)
+
 #include<iostream>
 #include<vector>
 using namespace std;
