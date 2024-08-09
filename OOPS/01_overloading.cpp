@@ -1,20 +1,21 @@
+//implementing class and its instance
 #include<iostream>
 using namespace std;
 
-int add(int, int);
-int add(int, int, int);
+class Person{ // class is the template for the objects
+    private:
+        string name; // prperty declaration
+
+    public:
+        Person(string nm): name(nm){}; // constructor method (parameterized constructors)
+        void displayName(); // method declaration
+};
+
+void Person:: displayName(){
+    cout<<this->name;
+}
 
 int main(){
-    cout<<add(1,2)<<endl;
-    cout<<add(1,2,3)<<endl;
-}
-
-//here function name is same but parameters are different
-//i.e. func signature is different 
-//hence it is a function overloading
-int add(int a, int b){
-    return a+b;
-}
-int add(int a, int b, int c){
-    return a+b+c;
+    Person p1 = Person("Shubham Gharage");  // instantiati0ng class
+    p1.displayName(); // accessing method of the object
 }

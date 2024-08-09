@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-int findPivot(int* arr, int n){
+void findPivot(int* arr, int n){
     int s = 0;
     int e = n -1;
     int m = s + (e - s)/2;
@@ -19,7 +19,7 @@ int findPivot(int* arr, int n){
             e = m;
         }
     }
-    return arr[s];
+    cout<<"Pivot is : "<<arr[s]<<endl;
 }
 
 int main(){
@@ -30,5 +30,5 @@ int main(){
     for(int i = 0; i < n; i++){
         cin>>arr[i];
     }
-    cout<<"Pivot is : "<<findPivot(arr, n)<<endl;
+    findPivot(arr, n);
 }
