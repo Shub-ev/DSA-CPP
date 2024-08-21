@@ -27,7 +27,6 @@ void binSearch(vector<int> arr, int key){
     }
 }
 
-
 int main(){
     int n;
     cout << "Enter Array Size: ";
