@@ -2,20 +2,18 @@
 using namespace std;
 
 int* selectionSort(int* arr, int n){
-    int count = 0;
     for(int i = 0; i < n-1; i++){
         int small = i;
-        for(int j = i+1; j < n; j++){ // i + 1 bcoz no need to compare i with i i.e. j == i
+        for(int j = i+1; j < n; j++){
             if(arr[j] < arr[small]){
                 small = j;
             }
         }
-        count++;
-        int temp = arr[i];
-        arr[i] = arr[small];
-        arr[small] = temp;
+        int temp = arr[small];
+        arr[small] = arr[i];
+        arr[i] = temp;
     }
-    cout<<"Total Iterations : "<<count<<endl;
+
     return arr;
 }
 
@@ -24,6 +22,6 @@ int main(){
     int* b = selectionSort(a,7);
 
     for(int i = 0; i < 7; i++){
-        cout<<b[i]<<endl;
+        cout<<b[i]<<' ';
     }
 }

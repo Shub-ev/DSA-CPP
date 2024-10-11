@@ -1,29 +1,43 @@
-#include<iostream>
+#include <bits/stdc++.h> 
 using namespace std;
 
-int BinarySearch(int arr[], int k){
-    int s = 0;
-    int e = 8;
-    int m = s + (e-s)/2;
+void insertionSort(int n, int *arr){
+    int t;
+    cin>>t;
 
-    while(s <= e){
-        if(arr[m] == k){
-            return m;
+    while(t > 0){
+        int n;
+        cin>>n;
+
+        int arr[n];
+        for(int i = 0; i < n; i++){
+            cin>>arr[i];
         }
-        else if(arr[m] < k){
-            s = m + 1;
+
+        for(int i = 1; i < n; i++){
+            int curr = arr[i];
+
+            int j = i-1;
+            for(; j >= 0; j--){
+                if(arr[j] > curr){
+                    arr[j+1] = arr[j];
+                }
+                else{
+                    break;
+                }
+            }
+            arr[j+1] = curr;
         }
-        else{
-            e = m - 1;
+
+        for(int i = 0; i < n; i++){
+            cout<<arr[i]<<" ";
         }
-        m = s + (e - s)/2;
+        // cout<<"\n";
+        t--;
     }
-    return -1;
 }
 
 int main(){
-    int arr[] = {1,2,3,4,5,6,7,8,9};
-
-    int res = BinarySearch(arr, 2);
-    cout<<res;
+    int arr[] = {2,1,5,8,0,4,3};
+    insertionSort(7, arr);
 }
