@@ -6,7 +6,7 @@ using namespace std;
 // but STL array have some array methods
 
 int main(){
-    // int arr[4] = {1,2,3,4};      // normal homogeneous static array
+    // int arr[4] = { 1, 2, 3, 4 };      // normal homogeneous static array
     // arr.size();          // not possible
 
     array<int, 4> arr = { 1, 2, 3, 4 };    // this is STL array // this uses same above method for implementation and hence static
