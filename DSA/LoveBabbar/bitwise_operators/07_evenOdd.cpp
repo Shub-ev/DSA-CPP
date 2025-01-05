@@ -1,10 +1,13 @@
 #include<iostream>
 using namespace std;
 
+void evenOdd(int n){
+    cout<<((n&1) ? "Odd" : "Even");
+}
+
 int main(){
-    cout<<"Enter Queue Size: ";
     int n;
     cin>>n;
 
-    
+    evenOdd(n);
 }

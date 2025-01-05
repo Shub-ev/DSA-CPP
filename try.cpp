@@ -1,7 +1,12 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main(){
-    int a = 1, b= 2;
-    cout<<(25 * (++b));
+    int t;
+    cin>>t;
+    while(t--){
+        int 
+    }
+    return 0;
 }
